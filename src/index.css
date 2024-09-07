@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .paddingX {
+    @apply px-4 sm:px-6 md:px-10 lg:px-16 xl:px-[150px];
+  }
+  .secondaryHeading {
+    @apply text-[1.4rem] md:text-[1.55rem] lg:text-[1.7rem];
+  }
+  .tertiaryHeading {
+    @apply text-[1rem] md:text-[1.1rem];
+  }
+  .inputStules {
+    @apply rounded-lg border-none bg-[#191828] px-6 py-4 font-medium text-white outline-none;
+  }
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Black.ttf");
+  font-weight: 900;
+}
+
+:root {
+  --dark-blue: #0c0a1f;
+  --purple: #4f3dff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-weight: 400;
+  font-family: inherit;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.border-bottom-gradient {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--purple),
+      var(--purple),
+      rgba(201, 201, 250, 0.13),
+      transparent
+    )
+    1;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+
+.circular-gradient-bg {
+  background: radial-gradient(circle at bottom, #b9b7f7, transparent 55%);
+}
+
+.hero-height {
+  height: calc(100vh - 8rem);
+}
+
+.round-gradient-border {
+  background:
+    linear-gradient(var(--dark-blue), var(--dark-blue)) padding-box,
+    linear-gradient(
+        to bottom right,
+        var(--purple),
+        rgba(201, 201, 250, 0.13),
+        transparent 90%
+      )
+      border-box;
+  border-radius: 14px;
+  border: 1px solid transparent;
+}
+
+.round-gradient-border2 {
+  background:
+    linear-gradient(var(--dark-blue), var(--dark-blue)) padding-box,
+    linear-gradient(to bottom right, #a4a4a4, var(--dark-blue) 33%, transparent)
+      border-box;
+  border-radius: 500px;
+  border: 1px solid transparent;
+}
+
+.active {
+  color: var(--purple);
+}
+
+.radial {
+  background: radial-gradient(
+    rgba(195, 202, 255, 1) 0%,
+    rgba(195, 202, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.spinner {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #ececec);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -59,7 +59,7 @@ const Navbar = ({ activeSection }) => {
     >
       <a
         href="#home"
-        className={`text-[1.3rem] font-black ${scrolled ? "sm:text-[1.4rem] md:text-[1.4rem] xl:text-[1.5rem]" : "sm:text-[1.5rem] md:text-[1.55rem] xl:text-[1.65rem]"}`}
+        className={`text-[1.3rem] font-black transition-all duration-200 ease-out ${scrolled ? "sm:text-[1.4rem] md:text-[1.4rem] xl:text-[1.5rem]" : "sm:text-[1.5rem] md:text-[1.55rem] xl:text-[1.65rem]"}`}
       >
         Stefan <span className="text-[var(--purple)]">Yordanov</span>.
       </a>

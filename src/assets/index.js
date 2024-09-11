@@ -7,7 +7,6 @@ import team from "./svg/team.svg";
 import code from "./svg/code.svg";
 import formRocket from "./svg/FormRocket.svg";
 import BlarneyBunch from "./projectsImages/BlarneyBunch.png";
-import CozyCottage from "./projectsImages/CozyCottage.png";
 import forkify from "./projectsImages/forkify.png";
 import MyRecipeBook from "./projectsImages/MyRecipeBook.png";
 import StefsRecipes from "./projectsImages/StefsRecipes.png";
@@ -23,7 +22,6 @@ export {
   code,
   formRocket,
   BlarneyBunch,
-  CozyCottage,
   forkify,
   MyRecipeBook,
   StefsRecipes,

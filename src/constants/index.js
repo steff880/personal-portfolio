@@ -5,7 +5,6 @@ import {
   TheDOM,
   MyRecipeBook,
   forkify,
-  CozyCottage,
   StefsRecipes,
   BlarneyBunch,
 } from "../assets";
@@ -29,18 +28,10 @@ const projects = [
   {
     name: "Forkify",
     description:
-      "A fictional website built by following The Complete JavaScript Course 2023: From Zero to Expert!",
+      "A fictional website built with HTML, CSS, and JavaScript, which allows the user to search for, add, and bookmark recipes.",
     image: forkify,
     sourceCodeLink: "https://github.com/steff880/forkify-js-course-project",
     liveLink: "https://master--forkify-stefan880.netlify.app/",
-  },
-  {
-    name: "CozyCottage",
-    description:
-      "A interactive frontend project for booking cottages, built with HTML, CSS, and JavaScript.",
-    image: CozyCottage,
-    sourceCodeLink: "https://github.com/steff880/MS2-project-Cozy-Cottage",
-    liveLink: "https://steff880.github.io/MS2-project-Cozy-Cottage/index.html",
   },
   {
     name: "StefsRecipes",
@@ -105,14 +96,14 @@ const skills = [
     id: 1,
     title: "Fast Learner",
     icon: rocket,
-    text: "With the  ability to quickly grasp new concepts, I am ready to expand my knowledge, and for new challenges. ",
+    text: "With the ability to quickly grasp new concepts, I am ready to expand my knowledge and for new challenges.",
   },
 
   {
     id: 2,
     title: "Team Player",
     icon: team,
-    text: "I value team work and believe that the best way to achieve common goals is through collaboration. ",
+    text: "I value teamwork and believe that the best way to achieve common goals is through collaboration.",
   },
 
   {

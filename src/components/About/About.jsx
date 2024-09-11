@@ -32,10 +32,10 @@ const About = forwardRef(function About(_, ref) {
             Stefan <span className="text-[var(--purple)]">Yordanov</span>
           </h2>
           <p className="my-8 text-[14px] text-[#b1b1b1]">
-            Hello! I&apos;m Stefan Yordanov. A passionate Junior Developer fueld
-            by curiosity and drive to learn and create. I am eager to expand my
-            skills and make meaningful contributions to the world of software
-            development.
+            Hello! I&apos;m Stefan Yordanov. A passionate Junior Developer
+            fueled by curiosity and drive to learn and create. I am eager to
+            expand my skills and make meaningful contributions to the world of
+            software development.
           </p>
           <h3 className="tertiaryHeading mb-3 font-bold">My Skills</h3>
           <div className="flex flex-wrap gap-3 py-3 text-[12px] sm:text-[14px]">

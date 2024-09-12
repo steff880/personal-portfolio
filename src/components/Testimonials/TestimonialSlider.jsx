@@ -70,7 +70,7 @@ function TestimonialSlider() {
       </div>
       <SliderButton
         handleOnClick={handlePrev}
-        position="absolute left-[-10px] top-1/3 sm:left-0 md:left-5 lg:left-10 xl:left-20"
+        position="absolute left-[-10px] top-1/3 sm:left-0 md:left-5 lg:left-10 xl:left-28"
       >
         <FaChevronLeft />
       </SliderButton>

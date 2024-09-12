@@ -1,8 +1,10 @@
-import { testimonials } from "../../constants";
-
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
+import { testimonials } from "../../constants";
 import { fadeIn } from "../../utils/motion";
+import SliderButton from "./SliderButton";
 
 function TestimonialSlider() {
   const [index, setIndex] = useState(0);
@@ -11,14 +13,14 @@ function TestimonialSlider() {
     setIndex(i);
   };
 
-  useEffect(() => {
-    const handleNext = () =>
-      setIndex((current) => (current + 1) % testimonials.length);
-    const handlePrev = () =>
-      setIndex(
-        (current) => (current - 1 + testimonials.length) % testimonials.length,
-      );
+  const handleNext = () =>
+    setIndex((current) => (current + 1) % testimonials.length);
+  const handlePrev = () =>
+    setIndex(
+      (current) => (current - 1 + testimonials.length) % testimonials.length,
+    );
 
+  useEffect(() => {
     const handleArrowKeyEvent = (e) => {
       if (e.key === "ArrowLeft") {
         handlePrev();
@@ -37,7 +39,7 @@ function TestimonialSlider() {
   return (
     <motion.div
       variants={fadeIn("right", "spring", "0.2", "1")}
-      className="grid h-[400px] w-full content-center px-4"
+      className="relative grid h-[400px] w-full content-center px-4"
     >
       <motion.div
         key={testimonials[index].id}
@@ -66,6 +68,18 @@ function TestimonialSlider() {
           </div>
         ))}
       </div>
+      <SliderButton
+        handleOnClick={handlePrev}
+        position="absolute left-[-10px] top-1/3 sm:left-0 md:left-5 lg:left-10 xl:left-20"
+      >
+        <FaChevronLeft />
+      </SliderButton>
+      <SliderButton
+        handleOnClick={handleNext}
+        position="absolute right-[-10px] top-1/3 sm:right-0 md:right-5 lg:right-10 xl:right-28"
+      >
+        <FaChevronRight />
+      </SliderButton>
     </motion.div>
   );
 }

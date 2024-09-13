@@ -28,7 +28,7 @@ const projects = [
   {
     name: "Forkify",
     description:
-      "A fictional website built with HTML, CSS, and JavaScript, which allows the user to search for, add, and bookmark recipes.",
+      "A fictional website built with HTML, CSS, and JavaScript, which allows the users to search for, add, and bookmark recipes.",
     image: forkify,
     sourceCodeLink: "https://github.com/steff880/forkify-js-course-project",
     liveLink: "https://master--forkify-stefan880.netlify.app/",

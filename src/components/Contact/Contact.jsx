@@ -120,7 +120,8 @@ const Contact = forwardRef(function Contact(_, ref) {
 
           <button
             type="submit"
-            className="w-fit rounded-full bg-[var(--purple)] px-8 py-2 font-medium text-white shadow-md outline-none"
+            className="w-fit rounded-full bg-[var(--purple)] px-8 py-2 font-medium text-white shadow-md outline-none "
+            disabled={loading}
           >
             {loading ? "Sending..." : "Send"}
           </button>

@@ -56,7 +56,7 @@ const About = forwardRef(function About(_, ref) {
             <LinkButton
               bg="bg-[var(--purple)]"
               hover="hover:scale-[0.95]"
-              to="https://drive.google.com/file/d/1wMkLeEbDbtuBzx6U6QNm3u_Un5GmOWCM/view?usp=sharing"
+              to="https://drive.google.com/file/d/1JAcUIuWjrxtUs5AfrTjtETwISxu8Rg9U/view?usp=sharing"
             >
               Download CV
             </LinkButton>
